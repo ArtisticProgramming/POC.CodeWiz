@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e7df8909-c4a6-432b-8d2a-0c48a15d70c7": {
+      "ProjectGuid": "e7df8909-c4a6-432b-8d2a-0c48a15d70c7",
+      "DisplayName": "POC.CodeWiz",
+      "ColorIndex": 0
+    },
+    "58057c2d-6058-4a58-ab91-8a9ddddb3f6e": {
+      "ProjectGuid": "58057c2d-6058-4a58-ab91-8a9ddddb3f6e",
+      "DisplayName": "CodeWiz.UntTests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

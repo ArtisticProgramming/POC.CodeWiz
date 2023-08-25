@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.CodeWiz", "CodeWiz\POC.CodeWiz.csproj", "{E7DF8909-C4A6-432B-8D2A-0C48A15D70C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C7AD6E80-73DF-447D-A894-E551B4984789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWiz.UntTests", "CodeWiz.UntTests\CodeWiz.UntTests.csproj", "{58057C2D-6058-4A58-AB91-8A9DDDDB3F6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7DF8909-C4A6-432B-8D2A-0C48A15D70C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DF8909-C4A6-432B-8D2A-0C48A15D70C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DF8909-C4A6-432B-8D2A-0C48A15D70C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DF8909-C4A6-432B-8D2A-0C48A15D70C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58057C2D-6058-4A58-AB91-8A9DDDDB3F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58057C2D-6058-4A58-AB91-8A9DDDDB3F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58057C2D-6058-4A58-AB91-8A9DDDDB3F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58057C2D-6058-4A58-AB91-8A9DDDDB3F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58057C2D-6058-4A58-AB91-8A9DDDDB3F6E} = {C7AD6E80-73DF-447D-A894-E551B4984789}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C5B3478-E0DC-431B-B6E7-AE5EF6F35E91}
+	EndGlobalSection
+EndGlobal
