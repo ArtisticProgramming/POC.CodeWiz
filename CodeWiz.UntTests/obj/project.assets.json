@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Castle.Core/5.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {}
+        }
+      },
       "coverlet.collector/3.1.0": {
         "type": "package",
         "build": {
@@ -771,6 +783,18 @@
           "build/netcoreapp2.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
+      "Moq/4.20.69": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "compile": {
+          "lib/net6.0/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1425,6 +1449,30 @@
     }
   },
   "libraries": {
+    "Castle.Core/5.1.1": {
+      "sha512": "rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "type": "package",
+      "path": "castle.core/5.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle-logo.png",
+        "castle.core.5.1.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net462/Castle.Core.dll",
+        "lib/net462/Castle.Core.xml",
+        "lib/net6.0/Castle.Core.dll",
+        "lib/net6.0/Castle.Core.xml",
+        "lib/netstandard2.0/Castle.Core.dll",
+        "lib/netstandard2.0/Castle.Core.xml",
+        "lib/netstandard2.1/Castle.Core.dll",
+        "lib/netstandard2.1/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
     "coverlet.collector/3.1.0": {
       "sha512": "YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
       "type": "package",
@@ -2865,6 +2913,27 @@
         "lib/uap10.0/testhost.dll",
         "microsoft.testplatform.testhost.16.11.0.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
+      ]
+    },
+    "Moq/4.20.69": {
+      "sha512": "8P/oAUOL8ZVyXnzBBcgdhTsOD1kQbAWfOcMI7KDQO3HqQtzB/0WYLdnMa4Jefv8nu/MQYiiG0IuoJdvG0v0Nig==",
+      "type": "package",
+      "path": "moq/4.20.69",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net462/Moq.dll",
+        "lib/net462/Moq.xml",
+        "lib/net6.0/Moq.dll",
+        "lib/net6.0/Moq.xml",
+        "lib/netstandard2.0/Moq.dll",
+        "lib/netstandard2.0/Moq.xml",
+        "lib/netstandard2.1/Moq.dll",
+        "lib/netstandard2.1/Moq.xml",
+        "moq.4.20.69.nupkg.sha512",
+        "moq.nuspec",
+        "readme.md"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -5316,6 +5385,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 16.11.0",
+      "Moq >= 4.20.69",
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
       "POC.CodeWiz >= 1.0.0",
@@ -5329,11 +5399,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
+      "projectUniqueName": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
       "projectName": "CodeWiz.UntTests",
-      "projectPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
+      "projectPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
       "packagesPath": "C:\\Users\\jafar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\obj\\",
+      "outputPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -5354,8 +5424,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj": {
-              "projectPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj"
+            "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj": {
+              "projectPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj"
             }
           }
         }
@@ -5373,6 +5443,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.11.0, )"
+          },
+          "Moq": {
+            "target": "Package",
+            "version": "[4.20.69, )"
           },
           "NUnit": {
             "target": "Package",

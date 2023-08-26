@@ -6,18 +6,24 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        using IHost host = CreateHostBuilder(args).Build();
-        using var scope = host.Services.CreateScope();
-        var serviceProvider = scope.ServiceProvider;
-        var app = serviceProvider.GetRequiredService<App>();
+        Setup(args, out IHost host, out IServiceScope scope, out App app);
         app.Run();
+    }
+
+    private static void Setup(string[] args, out IHost host, out IServiceScope scope, out App app)
+    {
+        host = CreateHostBuilder(args).Build();
+        scope = host.Services.CreateScope();
+        var serviceProvider = scope.ServiceProvider;
+        app = serviceProvider.GetRequiredService<App>();
     }
 
     static IHostBuilder CreateHostBuilder(string[] args) =>
          Host.CreateDefaultBuilder(args)
              .ConfigureServices((hostContext, services) =>
              {
-                 services.AddTransient<IHelper, Helper>();
+                 //services.AddTransient<IHelper, Helper>();
+                 //services.AddTransient<IHelper2, Helper2>();
                  services.AddScoped<App>();
              });
 }

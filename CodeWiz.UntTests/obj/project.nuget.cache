@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6yVlxsLCGb+PeiXfb7rkmxElQ+nHcrHRpo7UkHI/6vDcmmFodn6fk7zPmN/YNQ4j/ILIZ/PcgkOvyDPhJ0MCng==",
+  "dgSpecHash": "dlBtvimi0fC1Yn6CD8LpGD3/5j+fXyqSCZnllWiEQEMWmn4fRfKiBvvtbLsSSs+6VI6fTt4eQE+Yq367ZM+ilQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
+  "projectFilePath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jafar\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
@@ -37,6 +38,7 @@
     "C:\\Users\\jafar\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.11.0\\microsoft.testplatform.objectmodel.16.11.0.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\microsoft.testplatform.testhost\\16.11.0\\microsoft.testplatform.testhost.16.11.0.nupkg.sha512",
+    "C:\\Users\\jafar\\.nuget\\packages\\moq\\4.20.69\\moq.4.20.69.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",

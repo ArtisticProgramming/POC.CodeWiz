@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj": {}
+    "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj": {
+    "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
+        "projectUniqueName": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
         "projectName": "CodeWiz.UntTests",
-        "projectPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
+        "projectPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\CodeWiz.UntTests.csproj",
         "packagesPath": "C:\\Users\\jafar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz.UntTests\\obj\\",
+        "outputPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz.UntTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj": {
-                "projectPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj"
+              "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj": {
+                "projectPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj"
               }
             }
           }
@@ -51,6 +51,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
             },
             "NUnit": {
               "target": "Package",
@@ -84,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj": {
+    "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
+        "projectUniqueName": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
         "projectName": "POC.CodeWiz",
-        "projectPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
+        "projectPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
         "packagesPath": "C:\\Users\\jafar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\obj\\",
+        "outputPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

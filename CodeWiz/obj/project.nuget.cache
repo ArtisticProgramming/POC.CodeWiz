@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UDQhjz9C0iIbzQ3/IHvz2J9kZOzl0dI8gbL5T7MDTn428tFCl+2ijKRPhJBCs6vv200MdUwHNiWpExsXatZjCw==",
+  "dgSpecHash": "6vk3G0/E3DxK7PbRsItobl3gMcWB1h7FzeU2xJF4Ry5WT33rFPqbGaM9KMybBOg6trl7x4ve0Hrtf3mdGYE6iA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jafar\\source\\repos\\CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
+  "projectFilePath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jafar\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\jafar\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
