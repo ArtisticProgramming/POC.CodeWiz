@@ -8,7 +8,7 @@ namespace POC.CodeWiz.CodeGen
 {
     internal interface ICodeGenerator
     {
-        string GenerateSignleTime(string templateText, Dictionary<string, string> arguments);
-        string GenerateMultiTime(string templateText, List<Dictionary<string, string>> argumentsList, string separatedBy);
+        string GenerateOneTime(string templateText, Dictionary<string, string> arguments);
+        string GenerateMultiTimeAndAppend(string templateText, List<Dictionary<string, string>> argumentsList, string separatedBy);
     }
 }

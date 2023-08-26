@@ -1,4 +1,4 @@
-﻿using POC.CodeWiz.Exceptions;
+﻿using POC.CodeWiz.Exceptions.CodeGen;
 using System.Text.RegularExpressions;
 
 namespace POC.CodeWiz.CodeGen
@@ -8,25 +8,30 @@ namespace POC.CodeWiz.CodeGen
         public string? ArgumentBeginingSign { get; set; }
         public string? ArgumentEndign { get; set; }
 
-        public string GenerateSignleTime(string templateText, Dictionary<string, string> arguments)
+        public string GenerateOneTime(string templateText, Dictionary<string, string> arguments)
         {
             if (string.IsNullOrEmpty(templateText))
-                throw new ArgumentNullException("Template text is empty or null");
+                return templateText;
 
             string result = GenerateTemplate(templateText, arguments);
 
             return result;
         }
 
-        public string GenerateMultiTime(string templateText, List<Dictionary<string, string>> argumentsList, string separatedBy)
+        /// <summary>
+        /// Generate Multitime an template and finally append them
+        /// </summary>
+        /// <param name="templateText"></param>
+        /// <param name="argumentsList"></param>
+        /// <param name="appendBy"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public string GenerateMultiTimeAndAppend(string templateText, List<Dictionary<string, string>> argumentsList, string appendBy)
         {
             var result = string.Empty;
 
-            if (string.IsNullOrEmpty(templateText))
-                throw new ArgumentNullException("Template text is empty or null");
-
             foreach (var arguments in argumentsList)
-                result += GenerateTemplate(templateText, arguments) + separatedBy;
+                result += GenerateOneTime(templateText, arguments) + appendBy;
 
             return result;
         }

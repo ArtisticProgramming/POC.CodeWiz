@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POC.CodeWiz.Exceptions
+namespace POC.CodeWiz.Exceptions.CodeGen
 {
-    internal class TemplateUnresolvedArgumentsException : Exception
+    public class TemplateUnresolvedArgumentsException : Exception
     {
         public TemplateUnresolvedArgumentsException()
             : base($"There is at least one unresolved arguments in template.")
