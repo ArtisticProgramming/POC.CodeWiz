@@ -7,7 +7,12 @@ namespace POC.CodeWiz.CodeGen
     {
         public string? ArgumentBeginingSign { get; set; }
         public string? ArgumentEndign { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="templateText"></param>
+        /// <param name="arguments"></param>
+        /// <returns></returns>
         public string GenerateOnce(string templateText, Dictionary<string, string> arguments)
         {
             if (string.IsNullOrEmpty(templateText))
@@ -19,13 +24,12 @@ namespace POC.CodeWiz.CodeGen
         }
 
         /// <summary>
-        /// Generate Multitime an template and finally append them
+        /// 
         /// </summary>
         /// <param name="templateText"></param>
         /// <param name="argumentsList"></param>
         /// <param name="appendBy"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
         public string GenerateMultiTimeAndAppend(string templateText, List<Dictionary<string, string>> argumentsList, string appendBy)
         {
             var result = string.Empty;
@@ -35,9 +39,16 @@ namespace POC.CodeWiz.CodeGen
 
             return result;
         }
-    
+
         #region Private Methodes
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="templateText"></param>
+        /// <param name="arguments"></param>
+        /// <returns></returns>
+        /// <exception cref="TemplateUnresolvedArgumentsException"></exception>
         private string GenerateTemplate(string templateText, Dictionary<string, string> arguments)
         {
             string result = ReplaceTemplateArguments(templateText, arguments);
@@ -71,7 +82,7 @@ namespace POC.CodeWiz.CodeGen
         private bool ContainsUnresolvedArguments(string text)
         {
             return Regex.IsMatch(text, @"@<[A-Za-z0-9]+>");
-        } 
+        }
         #endregion
     }
 }
