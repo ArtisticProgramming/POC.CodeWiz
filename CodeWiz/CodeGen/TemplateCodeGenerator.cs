@@ -3,12 +3,12 @@ using System.Text.RegularExpressions;
 
 namespace POC.CodeWiz.CodeGen
 {
-    public class CodeGenerator : ICodeGenerator
+    public class TemplateCodeGenerator : ITemplateCodeGenerator
     {
         public string? ArgumentBeginingSign { get; set; }
         public string? ArgumentEndign { get; set; }
 
-        public string GenerateOneTime(string templateText, Dictionary<string, string> arguments)
+        public string GenerateOnce(string templateText, Dictionary<string, string> arguments)
         {
             if (string.IsNullOrEmpty(templateText))
                 return templateText;
@@ -31,10 +31,12 @@ namespace POC.CodeWiz.CodeGen
             var result = string.Empty;
 
             foreach (var arguments in argumentsList)
-                result += GenerateOneTime(templateText, arguments) + appendBy;
+                result += GenerateOnce(templateText, arguments) + appendBy;
 
             return result;
         }
+    
+        #region Private Methodes
 
         private string GenerateTemplate(string templateText, Dictionary<string, string> arguments)
         {
@@ -69,6 +71,7 @@ namespace POC.CodeWiz.CodeGen
         private bool ContainsUnresolvedArguments(string text)
         {
             return Regex.IsMatch(text, @"@<[A-Za-z0-9]+>");
-        }
+        } 
+        #endregion
     }
 }

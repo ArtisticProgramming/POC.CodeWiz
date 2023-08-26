@@ -13,14 +13,14 @@ namespace CodeWiz.UntTests.CodeGen
     [TestFixture]
     internal class CodeGeneratorUnitTest
     {
-        private CodeGenerator codeGenerator;
+        private TemplateCodeGenerator codeGenerator;
         private string templateText;
 
         [SetUp]
         public void SetUp()
         {
             // Code to set up arrangements before each test
-            codeGenerator = new CodeGenerator()
+            codeGenerator = new TemplateCodeGenerator()
             {
                 ArgumentBeginingSign = "@<",
                 ArgumentEndign = ">@"
@@ -39,7 +39,7 @@ namespace CodeWiz.UntTests.CodeGen
             arguments.Add("questionMark", "?");
 
             // Act
-            string result = codeGenerator.GenerateOneTime(templateText, arguments);
+            string result = codeGenerator.GenerateOnce(templateText, arguments);
 
             // Assert
             Assert.AreEqual("How are you ali?", result);
@@ -53,7 +53,7 @@ namespace CodeWiz.UntTests.CodeGen
             arguments.Add("MissedArgument", "-");
 
             // Act
-            TestDelegate act = () => codeGenerator.GenerateOneTime(templateText, arguments);
+            TestDelegate act = () => codeGenerator.GenerateOnce(templateText, arguments);
 
             // Assert
             Assert.Throws<TemplateMissingArgumentException>(act);
@@ -70,7 +70,7 @@ namespace CodeWiz.UntTests.CodeGen
 
 
             // Act
-            string result = codeGenerator.GenerateOneTime(templateContent, arguments);
+            string result = codeGenerator.GenerateOnce(templateContent, arguments);
 
             // Assert
             Assert.AreEqual("How are you ali?ali ali", result);
@@ -82,7 +82,7 @@ namespace CodeWiz.UntTests.CodeGen
             arguments.Add("customer", "ali");
 
             // Act
-            TestDelegate act = () => codeGenerator.GenerateOneTime(templateText, arguments);
+            TestDelegate act = () => codeGenerator.GenerateOnce(templateText, arguments);
 
             // Assert
             Assert.Throws<TemplateUnresolvedArgumentsException>(act);

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace POC.CodeWiz.CodeGen
 {
-    internal interface ICodeGenerator
+    internal interface ITemplateCodeGenerator
     {
-        string GenerateOneTime(string templateText, Dictionary<string, string> arguments);
+        string GenerateOnce(string templateText, Dictionary<string, string> arguments);
         string GenerateMultiTimeAndAppend(string templateText, List<Dictionary<string, string>> argumentsList, string separatedBy);
     }
 }
