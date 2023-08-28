@@ -8,6 +8,7 @@ namespace POC.CodeWiz.Template
 {
     public class TemplateHandler : ITemplateHandler
     {
+
         public bool DoesTemplateFileExist(string name)
         {
             return File.Exists(name);

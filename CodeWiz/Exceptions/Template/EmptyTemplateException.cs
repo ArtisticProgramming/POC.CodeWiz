@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace POC.CodeWiz.Exceptions.Template
 {
-    internal class EmptyTemplateException
+    public class EmptyTemplateException : Exception
     {
+        public EmptyTemplateException(string path) : base("Template does not have any content.")
+        {
+        }
     }
 }

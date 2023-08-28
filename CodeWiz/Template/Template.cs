@@ -9,44 +9,45 @@ namespace POC.CodeWiz.Template
 {
     public class Template
     {
-        public string Path { get; set; }
-        public string Name { get; set; }
-        public string? Body { get; set; } = null;
-        public Dictionary<string, string> Arguments { get; set; }
+        private readonly FileInfo _templateFileInfo;
+
+        public string Name { get; }
+        public string? Body { get; private set; }
+        public Dictionary<string, string> Arguments { get; private set; }
 
         public Template(string path)
         {
-            Path = path;
+            if (string.IsNullOrWhiteSpace(path))
+                throw new ArgumentException("Path cannot be null or empty.", nameof(path));
 
+            _templateFileInfo = new FileInfo(path);
+            Name = _templateFileInfo.Name;
         }
 
-        public void Build()
+        public void Load()
         {
-            if (DoesTemplateFileExist() == false)
-                throw new FileNotFoundException(Path);
+            if (!DoesTemplateFileExist())
+                throw new FileNotFoundException($"Template file not found: {_templateFileInfo.FullName}");
 
-            SetBody();
+            Body = File.ReadAllText(_templateFileInfo.FullName);
 
             if (IsBodyEmptyOrNull())
-                throw new EmptyTemplateException(Path);
-
-            SetArguments();
+                throw new EmptyTemplateException(_templateFileInfo.FullName);
         }
 
+        public void SetArguments(Dictionary<string, string> arguments)
+        {
+            Arguments = arguments ?? throw new ArgumentNullException(nameof(arguments));
+        }
 
         private bool DoesTemplateFileExist()
         {
-            return File.Exists(Path);
-        }
-
-        private void SetBody()
-        {
-            Body = File.ReadAllText(Path);
+            return _templateFileInfo.Exists;
         }
 
         private bool IsBodyEmptyOrNull()
         {
-            return Body == null || Body.Length == 0;
+            return string.IsNullOrEmpty(Body);
         }
     }
 }
