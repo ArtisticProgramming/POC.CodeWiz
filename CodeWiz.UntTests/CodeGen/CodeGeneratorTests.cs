@@ -11,7 +11,7 @@ namespace CodeWiz.UntTests.CodeGen
 {
 
     [TestFixture]
-    internal class CodeGeneratorUnitTest
+    internal class CodeGeneratorTests
     {
         private TemplateCodeGenerator codeGenerator;
         private string templateText;
@@ -67,7 +67,6 @@ namespace CodeWiz.UntTests.CodeGen
             Dictionary<string, string> arguments = new Dictionary<string, string>();
             arguments.Add("customer", "ali");
             arguments.Add("questionMark", "?");
-
 
             // Act
             string result = codeGenerator.GenerateOnce(templateContent, arguments);

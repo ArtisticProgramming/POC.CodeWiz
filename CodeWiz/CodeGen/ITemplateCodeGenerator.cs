@@ -10,7 +10,6 @@ namespace POC.CodeWiz.CodeGen
     {
         string GenerateOnce(string templateText, Dictionary<string, string> arguments);
 
-
         string GenerateMultiTimeAndAppend(string templateText, List<Dictionary<string, string>> argumentsList, string separatedBy);
     }
 }
