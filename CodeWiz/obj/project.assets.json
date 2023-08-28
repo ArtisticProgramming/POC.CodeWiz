@@ -1461,25 +1461,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mosta\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jafar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mosta\\Documents\\GitHub\\70Project\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
+      "projectUniqueName": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
       "projectName": "POC.CodeWiz",
-      "projectPath": "C:\\Users\\mosta\\Documents\\GitHub\\70Project\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
-      "packagesPath": "C:\\Users\\mosta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mosta\\Documents\\GitHub\\70Project\\POC.CodeWiz\\CodeWiz\\obj\\",
+      "projectPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\POC.CodeWiz.csproj",
+      "packagesPath": "C:\\Users\\jafar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jafar\\source\\repos\\POC.CodeWiz\\CodeWiz\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\mosta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jafar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1528,7 +1528,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

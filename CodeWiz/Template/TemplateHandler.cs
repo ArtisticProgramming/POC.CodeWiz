@@ -25,8 +25,8 @@ namespace POC.CodeWiz.Template
 
         public bool IsTemplateValid(string templateText)
         {
-            
             return true;
         }
+
     }
 }
