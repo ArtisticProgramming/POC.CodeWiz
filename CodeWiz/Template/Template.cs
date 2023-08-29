@@ -35,7 +35,7 @@ namespace POC.CodeWiz.Template
                 throw new EmptyTemplateException(_templateFileInfo.FullName);
         }
 
-        public void SetArguments(Dictionary<string, string> arguments)
+        private void SetArguments(Dictionary<string, string> arguments)
         {
             Arguments = arguments ?? throw new ArgumentNullException(nameof(arguments));
         }

@@ -1,13 +1,4 @@
-﻿using NUnit.Framework;
-using POC.CodeWiz.Template;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CodeWiz.UntTests.CodeGen
+﻿namespace CodeWiz.UntTests.CodeGen
 {
     [TestFixture]
     public class TemplateHandlerTests
